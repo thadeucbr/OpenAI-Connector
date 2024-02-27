@@ -6,6 +6,13 @@ import listMessages from '../../../util/listMessages.js';
  *    tags:
  *      - Message
  *    description: Use to request all messages
+ *    parameters:
+ *      - in: path
+ *        name: threadId
+ *        required: true
+ *        description: The ID of the thread
+ *        schema:
+ *          type: string
  *    responses:
  *      '200':
  *        description: A successful response
