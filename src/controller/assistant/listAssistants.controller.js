@@ -1,4 +1,50 @@
 import listAssistants from '../../util/listAssistants.js';
+/**
+ * @swagger
+ * /assistant/list:
+ *   get:
+ *     summary: Get the list of assistants
+ *     description: Returns a list of assistants.
+ *     responses:
+ *       200:
+ *         description: Successful operation
+ *         content:
+ *           application/json:
+ *             schema:
+ *               type: object
+ *               properties:
+ *                 assistants:
+ *                   type: array
+ *                   items:
+ *                     type: object
+ *                     properties:
+ *                       id:
+ *                         type: string
+ *                       object:
+ *                         type: string
+ *                       created_at:
+ *                         type: number
+ *                       name:
+ *                         type: string
+ *                       description:
+ *                         type: string
+ *                       model:
+ *                         type: string
+ *                       instructions:
+ *                         type: string
+ *                       tools:
+ *                         type: array
+ *                         items:
+ *                           type: string
+ *                       file_ids:
+ *                         type: array
+ *                         items:
+ *                           type: string
+ *                       metadata:
+ *                         type: object
+ *     tags:
+ *       - Assistant
+ */
 export default async function listAssistantsController(_req, res) {
   try {
     const assistantList = await listAssistants();

@@ -1,4 +1,24 @@
 import createThread from '../../../util/createNewThread.js';
+/**
+ * @swagger
+ * /assistant/thread/create:
+ *   post:
+ *     summary: Create a new thread
+ *     description: Endpoint to create a new thread.
+ *     responses:
+ *       200:
+ *         description: Successful response
+ *         content:
+ *           application/json:
+ *             schema:
+ *               type: object
+ *               properties:
+ *                 thread:
+ *                   type: string
+ *                   description: The ID of the created thread.
+ *     tags:
+ *       - Thread
+ */
 
 export default async function createThreadController(_req, res) { 
   try {
