@@ -10,9 +10,9 @@ const assistantRouter = Router()
 assistantRouter.get('/list', listAssistantsController)
 
 assistantRouter.post('/message/send', sendMessageController)
-assistantRouter.get('/message/list', listMessagesController)
+assistantRouter.get('/message/list/:threadId', listMessagesController)
 
 assistantRouter.post('/thread/create', createThreadController)
-assistantRouter.delete('/thread/delete', deleteThreadController)
+assistantRouter.delete('/thread/delete/:threadId', deleteThreadController)
 
 export default assistantRouter;
