@@ -12,6 +12,8 @@
   "license": "ISC",
   "dependencies": {
     "express": "^4.18.2",
-    "openai": "^4.28.0"
+    "openai": "^4.28.0",
+    "swagger-jsdoc": "^6.2.8",
+    "swagger-ui-express": "^5.0.0"
   }
 }
