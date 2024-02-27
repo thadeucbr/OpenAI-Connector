@@ -7,11 +7,12 @@ import swaggerUi from 'swagger-ui-express'
 const app = express()
 
 const options = {
-  failOnErrors: true, // Whether or not to throw when parsing errors. Defaults to false.
+  failOnErrors: true,
   definition: {
     openapi: '3.0.0',
     info: {
-      title: 'Hello World',
+      title: 'OpenAI Connector API',
+      description: 'This API is designed to simplify and enhance the usage of the OpenAPI Assistant for sending messages and creating threads.',
       version: '1.0.0',
     },
   },
