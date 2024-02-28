@@ -72,6 +72,14 @@ import sendMessageService from '../../../service/assistant/message/sendMessage.s
  *               message: "Internal Server Error"
  *     security:
  *       - x-key: []
+ *     securitySchemes:
+ *       x-key:
+ *         type: apiKey
+ *         in: header
+ *         name: x-key
+ *         description: The API key for authentication.
+ *         required: true
+ *         example: "your-api-key"
  */
 
 export default async function sendMessageController (req, res) {
