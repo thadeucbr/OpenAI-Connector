@@ -14,8 +14,12 @@ import deleteThread from '../../../util/deleteThread.js';
  *         description: ID of the thread to delete
  *         schema:
  *           type: string
- *     security:
- *       - x-key: []
+ *       - in: header
+ *         name: x-key
+ *         required: true
+ *         schema:
+ *           type: string
+ *         description: API key for authentication
  *     responses:
  *       200:
  *         description: Thread successfully deleted

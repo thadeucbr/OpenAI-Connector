@@ -46,6 +46,13 @@ import listAssistants from '../../util/listAssistants.js';
  *       - Assistant
  *     security:
  *       - x-key: []
+ *     parameters:
+ *       - in: header
+ *         name: x-key
+ *         required: true
+ *         schema:
+ *           type: string
+ *         description: API key for authentication
  */
 export default async function listAssistantsController(_req, res) {
   try {
