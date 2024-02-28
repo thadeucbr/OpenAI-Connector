@@ -18,6 +18,15 @@ import createThread from '../../../util/createNewThread.js';
  *                   description: The ID of the created thread.
  *     tags:
  *       - Thread
+ *     security:
+ *       - x-key: []
+ *     parameters:
+ *       - in: header
+ *         name: x-key
+ *         required: true
+ *         schema:
+ *           type: string
+ *         description: API key for authentication
  */
 
 export default async function createThreadController(_req, res) { 

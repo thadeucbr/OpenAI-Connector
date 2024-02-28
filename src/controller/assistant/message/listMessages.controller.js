@@ -13,6 +13,12 @@ import listMessages from '../../../util/listMessages.js';
  *        description: The ID of the thread
  *        schema:
  *          type: string
+ *      - in: header
+ *        name: x-key
+ *        required: true
+ *        description: The x-key value
+ *        schema:
+ *          type: string
  *    responses:
  *      '200':
  *        description: A successful response

@@ -44,6 +44,8 @@ import listAssistants from '../../util/listAssistants.js';
  *                         type: object
  *     tags:
  *       - Assistant
+ *     security:
+ *       - x-key: []
  */
 export default async function listAssistantsController(_req, res) {
   try {

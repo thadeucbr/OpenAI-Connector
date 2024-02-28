@@ -70,6 +70,8 @@ import sendMessageService from '../../../service/assistant/message/sendMessage.s
  *             example:
  *               error: "Internal Server Error"
  *               message: "Internal Server Error"
+ *     security:
+ *       - x-key: []
  */
 
 export default async function sendMessageController (req, res) {
